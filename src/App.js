@@ -21,7 +21,7 @@ function App() {
           <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 navBarContainer">
 
           </div>
-          <div className="col-md-12 col-lg-9 col-xl-10 mainContainer">
+          <div className="col-md-12 col-lg-9 col-xl-10 p-0 mainContainer">
 
             <Switch>
               <Route exact path="/" component={Home} />
