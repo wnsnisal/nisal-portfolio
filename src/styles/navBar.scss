@@ -1,0 +1,97 @@
+.div-profile-image {
+  width: 7.5em;
+  height: 7.5em;
+  border-radius: 3.75em;
+  background-color: #62616e;
+  margin: auto;
+  border: 3px solid #8f8f8f;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.3);
+}
+.div-profile-image:hover {
+  border: 3px solid #00a8ff;
+}
+.div-social-icons {
+  background-color: #3f3e46;
+  color: #ffff;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.3);
+  font-size: 0.9em;
+}
+.div-social-icons:hover {
+  background-color: #00a8ff;
+}
+.meu-tabs {
+  background-color: #3f3e46;
+  width: 12em;
+  border-radius: 20px;
+  padding: 5px 5px 5px 25%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 5px 0;
+  color: #ffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.3);
+  font-size: 0.9em;
+}
+.meu-tabs:hover {
+  color: #00a8ff;
+}
+.navBarContainer {
+  display: block;
+}
+.navCloseButton {
+  display: none;
+  color: "white";
+}
+.navOpenButton {
+  position: fixed;
+  left: 0px;
+  margin-top: 45vh;
+  height: 4em;
+  width: 1em;
+  padding: 0;
+  background-color: #212027;
+  color: #dbdbdb;
+  border: 0;
+  border-radius: 0px 5px 5px 0px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.navOpenButton:hover {
+  color: #00a8ff;
+}
+.navBarShow {
+  transform: translateX(0%);
+  transition: all 0.5s ease-in-out;
+}
+.navBarHide {
+  transform: translateX(0%);
+  transition: all 0.5s ease-in-out;
+}
+.mainContainer {
+  padding: 0;
+}
+
+@media only screen and (max-width: 992px) {
+  .navBarContainer {
+    display: none;
+  }
+  .navBarHide {
+    transform: translateX(-100%);
+  }
+  .navCloseButton {
+    display: block;
+    background-color: transparent;
+    color: #8f8f8f;
+    border: 0;
+    float: right;
+    font-size: 25px;
+  }
+  .mainContainer {
+    padding: 0 0 0 10px;
+  }
+}
