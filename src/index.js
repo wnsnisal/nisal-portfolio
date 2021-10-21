@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../src/styles/navBar.css';
 import '../src/styles/carouselStyles.css';
+import { Row, Col } from 'react-bootstrap';
 
 ReactDOM.render(
   <React.StrictMode>

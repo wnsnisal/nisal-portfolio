@@ -3,11 +3,10 @@ import nisal from '../img/nisal.png';
 import { Link } from 'react-router-dom';
 import Home from '../pages/Home';
 import Projects from '../pages/Projects';
-import { FaFacebookF,FaUserAlt,FaHouseDamage,FaFileAlt,FaCode,FaLaptop,FaBriefcase,FaPhoneSquare} from 'react-icons/fa';
-import { GrGithub,GrInstagram,GrLinkedinOption } from "react-icons/gr";
-import { BiX } from "react-icons/bi";
-// import { IoIosHome } from "react-icons/io";
 import { Link as ScrallLink, animateScroll as scroll } from "react-scroll";
+import { FaFacebookF, FaUserAlt, FaHouseDamage, FaFileAlt, FaCode, FaLaptop, FaBriefcase,FaPhoneSquare } from 'react-icons/fa';
+import { GrGithub, GrInstagram, GrLinkedinOption } from "react-icons/gr";
+import { BiX } from "react-icons/bi";
 
 class Navbar extends React.Component {
   render() { 
