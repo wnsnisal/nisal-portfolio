@@ -5,6 +5,7 @@ import Resume from '../components/Resume';
 import Services from '../components/Services';
 import Technologies from '../components/Technologies';
 import HomeComponent from '../components/HomeComponent';
+import Footer from '../components/Footer';
 
 class Home extends React.Component {
   render() { 
@@ -15,6 +16,7 @@ class Home extends React.Component {
       <Technologies/>
       <Services/>
       <Contact/>
+      <Footer/>
     </>;
   }
 }

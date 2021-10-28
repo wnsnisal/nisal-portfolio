@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import {Row,Col} from 'react-bootstrap';
-import {FaBabyCarriage} from 'react-icons/fa';
+import {FaBabyCarriage,FaCircle,FaGraduationCap} from 'react-icons/fa';
 
 class About extends React.Component {
   render() {
     
-    return <Row id="div-about" style={{height:"100vh"}}>
+    return <Row id="div-about" style={{height:"100vh",display:"flex",flexDirection:"row",alignItems:"center"}}>
         <Col xs={12} className="py-5 px-5">
           <Row>
             <h1 className="sectionHeading text-center text-dark" style={{fontWeight:"600"}}>About me</h1>
@@ -23,14 +23,44 @@ class About extends React.Component {
               <Row>
                 <Col xs={12} className="d-flex text-center justify-content-start" style={{alignItems:"center"}}>
                   <FaBabyCarriage className="text-dark"/><h5 className="text-dark mx-2" style={{fontWeight:"600"}}>Bron on</h5>
+                  
+                </Col>
+                <hr/>
+              </Row>
+              <Row>
+                <Col xs={12} className="d-flex text-center justify-content-start mb-3" style={{alignItems:"center"}}>
+                  <FaCircle className="text-dark" style={{width:"7px"}}/><p className="text-dark mx-2 mb-0">1992 June 28 in Sri Lanka.</p>
                 </Col>
               </Row>
-              <Row></Row>
-              <Row></Row>
-              <Row></Row>
-              <Row></Row>
-              <Row></Row>
-              <Row></Row>
+              <Row>
+                <Col xs={12} className="d-flex text-center justify-content-start" style={{alignItems:"center"}}>
+                  <FaGraduationCap className="text-dark" style={{width:"22px"}}/><h5 className="text-dark mx-2" style={{fontWeight:"600"}}>Education</h5>
+                </Col>
+                <hr/>
+              </Row>
+              <Row>
+                <Col xs={12} className="d-flex text-center justify-content-start mb-0" style={{alignItems:"center"}}>
+                  <FaCircle className="text-dark" style={{width:"7px"}}/><p className="text-dark mx-2 mb-0">R/Darmaloka Navodya School.</p>
+                </Col>
+                <Col xs={12} className="d-flex text-center justify-content-start mb-3" style={{alignItems:"center"}}>
+                  <p className="text-secondary mx-3 mb-0" style={{fontSize:"11px"}}>GCE O/L</p>
+                </Col>
+              </Row>
+              <Row>
+                <Col xs={12} className="d-flex text-center justify-content-start mb-0" style={{alignItems:"center"}}>
+                  <FaCircle className="text-dark" style={{width:"7px"}}/><p className="text-dark mx-2 mb-0">R/Sivali Cantrell College.</p>
+                </Col>
+                <Col xs={12} className="d-flex text-center justify-content-start mb-3" style={{alignItems:"center"}}>
+                  <p className="text-secondary mx-3 mb-0" style={{fontSize:"11px"}}>GCE A/L</p>
+                </Col>
+              </Row>
+                <Row><Col xs={12} className="d-flex text-center justify-content-start mb-0" style={{alignItems:"center"}}>
+                  <FaCircle className="text-dark" style={{width:"7px"}}/><p className="text-dark mx-2 mb-0">ESOFT - Metro College - Ratnapura.</p>
+                </Col>
+                <Col xs={12} className="d-flex text-center justify-content-start mb-3" style={{alignItems:"center"}}>
+                  <p className="text-secondary mx-3 mb-0" style={{fontSize:"11px"}}>HND in Software Engineering - Pearson certified</p>
+                </Col>
+              </Row>
             </Col>
           </Row>
         </Col>
