@@ -19,11 +19,11 @@ class Navbar extends React.Component {
       boxShadow: "1px 1px 5px rgba(0, 0, 0, 0.5)"
     }
 
-    const profileImage = {
-      width:"100%",
-      clipPath: "circle(73px at 57px 51px)",
-      scale:"0.8",
-    }
+    // const profileImage = {
+    //   width:"100%",
+    //   clipPath: "circle(73px at 57px 51px)",
+    //   scale:"0.8",
+    // }
 
     const hideNavBar = () => {
       document.getElementById("navBar").classList.remove("navBarShow");
@@ -47,7 +47,7 @@ class Navbar extends React.Component {
           > 
             <Link style={{textDecoration:"none"}} to="/">
               <div className="div-profile-image">
-                <img style={profileImage} src={nisal}/>
+                <img className='profile-image' src={nisal}/>
               </div>
             </Link>
           </ScrallLink>
@@ -87,7 +87,7 @@ class Navbar extends React.Component {
             duration={500}
           >
             <Link style={{textDecoration:"none"}} to="/"> 
-              <span className="meu-tabs"><FaHouseDamage style={{marginRight:"10px"}}/>Home</span>
+              <span onClick={hideNavBar} className="meu-tabs"><FaHouseDamage style={{marginRight:"10px"}}/>Home</span>
             </Link>
           </ScrallLink>
         </div>
@@ -103,7 +103,7 @@ class Navbar extends React.Component {
             duration={500}
           >
             <Link style={{textDecoration:"none"}} to="/about"> 
-            <span className="meu-tabs"><FaUserAlt style={{marginRight:"10px"}}/>About</span>
+            <span onClick={hideNavBar} className="meu-tabs"><FaUserAlt style={{marginRight:"10px"}}/>About</span>
             </Link>
           </ScrallLink>
         </div>
@@ -119,7 +119,7 @@ class Navbar extends React.Component {
             duration={500}
           >
             <Link style={{textDecoration:"none"}} to="/resume"> 
-            <span className="meu-tabs"><FaFileAlt style={{marginRight:"10px"}}/>Resume</span>
+            <span onClick={hideNavBar} className="meu-tabs"><FaFileAlt style={{marginRight:"10px"}}/>Resume</span>
             </Link>
           </ScrallLink>
         </div>
@@ -135,7 +135,7 @@ class Navbar extends React.Component {
             duration={500}
           >
             <Link style={{textDecoration:"none"}} to="/technologies">
-            <span className="meu-tabs"><FaCode style={{marginRight:"10px"}}/>Technologies</span>
+            <span onClick={hideNavBar} className="meu-tabs"><FaCode style={{marginRight:"10px"}}/>Technologies</span>
             </Link>
           </ScrallLink>
         </div>
@@ -150,7 +150,7 @@ class Navbar extends React.Component {
             duration={500}
           >
             <Link style={{textDecoration:"none"}} to="/services">
-            <span className="meu-tabs"><FaLaptop style={{marginRight:"10px"}}/>Services</span>
+            <span onClick={hideNavBar} className="meu-tabs"><FaLaptop style={{marginRight:"10px"}}/>Services</span>
             </Link>
           </ScrallLink>
         </div>
@@ -158,7 +158,7 @@ class Navbar extends React.Component {
       <div className="row">
         <div className="col-12 d-flex justify-content-center">
           <Link style={{textDecoration:"none"}} to="/projects">
-          <span className="meu-tabs"><FaBriefcase style={{marginRight:"10px"}}/>Projects</span>
+          <span onClick={hideNavBar} className="meu-tabs"><FaBriefcase style={{marginRight:"10px"}}/>Projects</span>
           </Link>
         </div>
       </div>
@@ -172,7 +172,7 @@ class Navbar extends React.Component {
             duration={500}
           >
             <Link style={{textDecoration:"none"}} to="/contact">
-              <span className="meu-tabs"><FaPhoneSquare style={{marginRight:"10px"}}/>Contact</span>
+              <span onClick={hideNavBar} className="meu-tabs"><FaPhoneSquare style={{marginRight:"10px"}}/>Contact</span>
             </Link>
           </ScrallLink>
         </div>

@@ -23,7 +23,7 @@ class Services extends React.Component {
           </Col>
         </Row>
         <Row>
-          <Col xs={12} md={6} lg={4} className="p-4">
+          <Col xs={12} sm={6} md={4} lg={4} className="p-4">
             <Row className="serviceBox p-4">
               <Col xs={12} className="text-center">
                 <img src={computer} style={serviceImg} alt="desktop"/>
@@ -36,7 +36,7 @@ class Services extends React.Component {
               </Col>
             </Row>
           </Col>
-          <Col xs={12} md={6} lg={4} className="p-4">
+          <Col xs={12} sm={6} md={4} lg={4} className="p-4">
             <Row className="serviceBox p-4">
               <Col xs={12} className="text-center">
                 <img src={responsive} style={serviceImg} alt="desktop"/>
@@ -49,16 +49,16 @@ class Services extends React.Component {
               </Col>
             </Row>
           </Col>
-          <Col xs={12} md={6} lg={4} className="p-4">
+          <Col xs={12} sm={6} md={4} lg={4} className="p-4">
             <Row className="serviceBox p-4">
               <Col xs={12} className="text-center">
                 <img src={webDesign} style={serviceImg} alt="desktop"/>
               </Col>
               <Col xs={12} className="text-center">
-                <h4 style={{fontWeight:"600"}}>Desktop Applications</h4>
+                <h4 style={{fontWeight:"600"}}>UIUX designs</h4>
               </Col>
               <Col xs={12} className="text-center text-secondary">
-                <p>Develop desktop applications using C#</p>
+                <p>Modern and accretive UIUX design for web applications, mobile and desktop applications. </p>
               </Col>
             </Row>
           </Col>
