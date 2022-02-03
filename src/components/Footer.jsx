@@ -3,9 +3,9 @@ import {Row,Col,Form} from 'react-bootstrap';
 import { GrGithub, GrInstagram, GrLinkedinOption } from "react-icons/gr";
 import {FaFacebookF} from 'react-icons/fa';
 
-class Footer extends React.Component {
-  render() { 
-    return <div className="p-5" style={{backgroundColor:"#212027"}}>
+function Footer() {
+  return (
+    <div className="p-5" style={{backgroundColor:"#212027"}}>
       <Row>
         <Col className="d-flex justify-content-center">
           <a href="https://www.facebook.com/nisal.hasindu.5" target="_blank" className="div-social-icons m-2 m-lg-1">
@@ -24,11 +24,11 @@ class Footer extends React.Component {
       </Row>
       <Row>
         <Col className="d-flex justify-content-center mt-3">
-          <p className="text-light m-0" style={{fontWeight:"300"}}>©2021 nisalhasindu.online. All Rights Reserved</p>
+          <p className="text-light text-center m-0" style={{fontWeight:"300"}}>©2021 nisalhasindu.online. All Rights Reserved</p>
         </Col>
       </Row>
-    </div>;
-  }
+    </div>
+  );
 }
- 
+
 export default Footer;

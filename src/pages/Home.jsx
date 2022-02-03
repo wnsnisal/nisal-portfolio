@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 import About from '../components/About';
 import Contact from '../components/Contact';
 import Resume from '../components/Resume';
@@ -7,9 +7,9 @@ import Technologies from '../components/Technologies';
 import HomeComponent from '../components/HomeComponent';
 import Footer from '../components/Footer';
 
-class Home extends React.Component {
-  render() { 
-    return <>
+function Home() {
+  
+  return <>
       <HomeComponent/>
       <About/>
       <Resume/>
@@ -18,7 +18,6 @@ class Home extends React.Component {
       <Contact/>
       <Footer/>
     </>;
-  }
 }
- 
+
 export default Home;

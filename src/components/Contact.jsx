@@ -2,8 +2,17 @@ import React, { Component, useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import {Row,Col,Form} from 'react-bootstrap';
 import {FaBabyCarriage,FaCircle,FaGraduationCap,FaEnvelope} from 'react-icons/fa';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function Contact() {
+
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      delay: 200,
+    })
+  }, []);
 
   const [values,setValues] = useState({
     from_name:"",
@@ -17,9 +26,11 @@ function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    if(values.from_name == '' || values.email == '' || values.message == '')
+
+    if(values.from_name == '' || values.email == '' || values.message == ''){
       setStatus('failed');
       return;
+    }
 
     emailjs.send('service_s3cv5sf', 'template_btu385c', values, 'user_UmznL8GvM12k9QE2BUvhY')
       .then(response=>{
@@ -64,9 +75,7 @@ function Contact() {
         <p className='m-0'>Send message failed!</p>
       </div>;
   }
-
-
-
+  
   return (
     <Row id="div-contact" style={{height:"100vh",display:"flex",flexDirection:"row",alignItems:"center"}}>
       <Col xs={12} className="py-5 px-5">
@@ -75,7 +84,7 @@ function Contact() {
         </Row>
         <Row className="justify-content-center">
           <Col xs ={11} md={6}>
-            <div className="blue-line"></div>
+            <div data-aos="flip-right" className="blue-line"></div>
           </Col>
         </Row>
         <Row>

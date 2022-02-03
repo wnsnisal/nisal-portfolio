@@ -1,25 +1,35 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 import {Row,Col} from 'react-bootstrap';
 import servicesBackground from '../img/services-background.jpg';
 import computer from '../img/computer.png';
 import responsive from '../img/responsive.png';
 import webDesign from '../img/web-design.png';
 import '../styles/services.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
-class Services extends React.Component {
-  render() { 
-    const serviceImg={
-      width:"50%",
-    }
+function Services() {
 
-    return <div id="div-services" style={{backgroundImage:`url(${servicesBackground})`,height:"100vh",backgroundSize:"cover",display:"flex",justifyContent:"center",alignItems:"center"}}>
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      delay: 200,
+    })
+  }, []);
+
+  const serviceImg={
+    width:"50%",
+  }
+
+  return (
+    <div id="div-services" style={{backgroundImage:`url(${servicesBackground})`,backgroundSize:"cover",display:"flex",justifyContent:"center",alignItems:"center"}}>
       <Col xs={12} className="py-5 px-5">
         <Row>
           <h1 className="sectionHeading text-center text-light" style={{fontWeight:"600"}}>Services</h1>
         </Row>
         <Row className="justify-content-center">
           <Col xs ={11} md={6}>
-            <div className="blue-line"></div>
+            <div data-aos="flip-right" className="blue-line"></div>
           </Col>
         </Row>
         <Row>
@@ -64,8 +74,8 @@ class Services extends React.Component {
           </Col>
         </Row>
       </Col>
-  </div>;
-  }
+    </div>
+  );
 }
  
 export default Services;

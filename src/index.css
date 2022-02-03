@@ -5,7 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
 }
 
 code {
@@ -18,4 +17,14 @@ code {
   width: 100%;
   padding: 1.5px;
   border-radius: 1.5px;
+}
+
+#div-technologies {
+  height: 100vh;
+}
+
+@media only screen and (max-width: 576px) {
+  #div-technologies {
+    height: 120vh;
+  }
 }

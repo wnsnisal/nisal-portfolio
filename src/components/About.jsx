@@ -1,18 +1,27 @@
-import React, { Component } from 'react';
+import React, { Component,useEffect } from 'react';
 import {Row,Col} from 'react-bootstrap';
 import {FaBabyCarriage,FaCircle,FaGraduationCap} from 'react-icons/fa';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
-class About extends React.Component {
-  render() {
-    
-    return <Row id="div-about" style={{height:"100vh",display:"flex",flexDirection:"row",alignItems:"center"}}>
+function About() {
+
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      delay: 200,
+    })
+  }, []);
+
+  return (
+      <Row id="div-about" style={{height:"100vh",display:"flex",flexDirection:"row",alignItems:"center"}}>
         <Col xs={12} className="py-5 px-5">
           <Row>
             <h1 className="sectionHeading text-center text-dark" style={{fontWeight:"600"}}>About me</h1>
           </Row>
           <Row className="justify-content-center">
             <Col xs ={11} md={6}>
-              <div className="blue-line"></div>
+              <div data-aos="flip-right" className="blue-line"></div>
             </Col>
           </Row>
           <Row>
@@ -64,8 +73,8 @@ class About extends React.Component {
             </Col>
           </Row>
         </Col>
-      </Row>;
-  }
+      </Row>
+  );
 }
  
 export default About;

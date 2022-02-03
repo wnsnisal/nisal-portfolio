@@ -1,20 +1,29 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 import {Row,Col} from 'react-bootstrap';
 import resumeBckground from '../img/resumeBackground.jpg';
 import {FaFileDownload} from 'react-icons/fa';
 import nisalCV from '../files/CurriculumVitae.pdf';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
-class Resume extends React.Component {
+function Resume() {
   
-  render() { 
-    return <div id="div-resume" style={{display:"flex",flexDirection:"row",justifyContent:"center",alignItems:"center",height:"100vh",backgroundImage:`url(${resumeBckground})`,backgroundSize:"cover",backgroundAttachment:"fixed",backgroundBlendMode:"overlay",backgroundColor:"rgba(0,0,0,0.4)"}}>
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      delay: 200,
+    })
+  }, []);
+
+  return (
+  <div id="div-resume" style={{display:"flex",flexDirection:"row",justifyContent:"center",alignItems:"center",height:"100vh",backgroundImage:`url(${resumeBckground})`,backgroundSize:"cover",backgroundAttachment:"fixed",backgroundBlendMode:"overlay",backgroundColor:"rgba(0,0,0,0.4)"}}>
     <Col xs={12} className="py-5 px-5">
       <Row>
         <h1 className="sectionHeading text-center text-light" style={{fontWeight:"600"}}>My Resume</h1>
       </Row>
       <Row className="justify-content-center">
         <Col xs ={11} md={6}>
-          <div className="blue-line"></div>
+          <div data-aos="flip-right" className="blue-line"></div>
         </Col>
       </Row>
       <Row className="justify-content-center">
@@ -28,8 +37,9 @@ class Resume extends React.Component {
         </Col>
       </Row>
     </Col>
-  </div>;
-  }
+  </div>
+  );
 }
+
  
 export default Resume;
