@@ -2,6 +2,11 @@ import React, { Component, useEffect } from 'react';
 import Footer from '../components/Footer';
 import {Row,Col} from 'react-bootstrap';
 import projectsBackgroundImage from '../img/projects-backgrounds.jpg';
+import portfolio_website from '../files/portfolio_website.xd';
+import e_music_cloud from '../files/e_music_cloud.xd';
+import Online_library_system from '../files/Online_library_system.xd';
+import {FaFileDownload} from 'react-icons/fa';
+import {BsGlobe2} from 'react-icons/bs';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -13,6 +18,10 @@ import webSample03 from '../img/web-sample-03.png';
 import webSample04 from '../img/web-sample-04.png';
 import desktopSample01 from '../img/desktop-sample-01.png';
 import desktopSample02 from '../img/desktop-sample-02.png';
+import uiSample01 from '../img/ui_sample_01.JPG';
+import uiSample02 from '../img/ui_sample_02.JPG';
+import uiSample03 from '../img/ui_sample_03.JPG';
+import graphicDesignPortfolio from '../img/graphic_design_portfolio.jpg';
 
 function Projects() {
 
@@ -45,6 +54,11 @@ function Projects() {
   const projectLinks = {
     color:"black",
     fontWeight:"600"
+  }
+
+  const fileDownloadIcon = {
+    color :"rgba(0,0,0,0.8)",
+    fontSize:"24px"
   }
 
   return <>
@@ -122,6 +136,62 @@ function Projects() {
             <p className='text-center'>Hotel management system</p>
         </Row>
       </Col>
+    </Row>
+
+    <Row>
+      <Col className="d-flex justify-content-center align-items-center mt-5">
+        <h1>UIUX Designs</h1>
+      </Col>
+    </Row>
+    <Row className="justify-content-center mt-3">
+      <Col xs ={11} md={6}>
+        <div data-aos="flip-right" className="blue-line"></div>
+      </Col>
+    </Row>
+    <Row className="justify-content-center px-5 mb-5">
+      <Col xs ={11} md={6} lg={4} className="mt-5">
+        <Row className="justify-content-center">
+            <img src={uiSample01} style={projectImage} alt="" />
+            portfolio website UI design
+            <a href={portfolio_website} className='text-center text-dark' download><FaFileDownload style={fileDownloadIcon}/> download xd file</a>
+        </Row>
+      </Col>
+      <Col xs ={11} md={6} lg={4} className="mt-5">
+        <Row className="justify-content-center">
+            <img src={uiSample02} style={projectImage} alt="" />
+            E Music Cloud UI Design
+            <a href={e_music_cloud} className='text-center text-dark' download><FaFileDownload style={fileDownloadIcon}/> download xd file</a>
+        </Row>
+      </Col>
+      <Col xs ={11} md={6} lg={4} className="mt-5">
+        <Row className="justify-content-center">
+            <img src={uiSample03} style={projectImage} alt="" />
+            Library management system ui design
+            <a href={Online_library_system} className='text-center text-dark' download><FaFileDownload style={fileDownloadIcon}/> download xd file</a>
+        </Row>
+      </Col>
+    </Row>
+
+
+    <Row>
+      <Col className="d-flex justify-content-center align-items-center mt-5">
+        <h1>Graphic Designs</h1>
+      </Col>
+    </Row>
+    <Row className="justify-content-center mt-3">
+      <Col xs ={11} md={6}>
+        <div data-aos="flip-right" className="blue-line"></div>
+      </Col>
+    </Row>
+    <Row className="justify-content-center px-5 mb-5">
+      <Col xs ={6} className="mt-3">
+        <Row className="justify-content-center">
+            <p style={{textAlign:"center",fontSize:"1.5em"}}>You can discover my graphic designs go to my graphic design portfolio below.</p>
+            <a href='https://printme.website/nisal-haisndu/' target="_blank"><img src={graphicDesignPortfolio} style={projectImage} alt="" /></a>
+            <a href='https://printme.website/nisal-haisndu/' className='text-center text-dark' target="_blank"><BsGlobe2 style={fileDownloadIcon}/>&nbsp;printme.website/nisal-haisndu</a>
+        </Row>
+      </Col>
+      
     </Row>
 
     <Footer/>
