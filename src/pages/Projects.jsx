@@ -184,7 +184,7 @@ function Projects() {
       </Col>
     </Row>
     <Row className="justify-content-center px-5 mb-5">
-      <Col xs ={6} className="mt-3">
+      <Col xs ={11} md={6} className="mt-3">
         <Row className="justify-content-center">
             <p style={{textAlign:"center",fontSize:"1.5em"}}>You can discover my graphic designs go to my graphic design portfolio below.</p>
             <a href='https://printme.website/nisal-haisndu/' target="_blank"><img src={graphicDesignPortfolio} style={projectImage} alt="" /></a>
